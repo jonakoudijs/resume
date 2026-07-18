@@ -1,0 +1,393 @@
+---
+# ── Site Metadata ──────────────────────────────────────────
+name: Jona Koudijs
+role: Platform Engineer
+email: hello@jona.io
+location: Utrecht, The Netherlands
+year: 2026
+website: https://www.jona.io
+
+# ── Social Links ───────────────────────────────────────────
+links:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/jonakoudijs/
+  - label: GitHub
+    url: https://github.com/jonakoudijs
+  - label: Email
+    url: mailto:hello@jona.io
+
+# ── About ──────────────────────────────────────────────────
+about: |
+  Platform Engineer with 14+ years of experience in designing and
+  building large-scale infrastructures using configuration management,
+  Infrastructure as Code, and container technologies. Strong
+  collaborator with a focus on teamwork and knowledge sharing across
+  teams.
+
+# ── Experience ─────────────────────────────────────────────
+experience:
+
+  - company: Politie Nederland
+    title: Platform Engineer
+    location: Nieuwegein, The Netherlands
+    date: Apr 2026 — Present
+    description: >
+      (contract) Working on the internal MAAS (Metal-As-A-Service) product.
+      This automates the roll-out of new hard machines and gives teams the
+      tools to manage the lifecycle themselves.
+    skills:
+      - Hardware
+      - Kubernetes
+      - Tinkerbell
+      - Go
+      - Ansible
+
+  - company: Nationale-Nederlanden
+    title: Platform Engineer
+    location: Rotterdam, The Netherlands
+    date: Feb 2025 — Mar 2026
+    description: >
+      (contract) Responsible for automating deployment and management
+      of a full Camunda platform on Kubernetes using Crossplane and KCL,
+      and supporting stakeholders in onboarding and demonstrations. Focused
+      on infrastructure-as-code, cloud integrations, and delivering a
+      reproducible platform for workflow and BPM services.
+    highlights:
+      - Implemented reusable KCL modules to deploy a complete Camunda
+        stack (Zeebe, Keycloak, Elasticsearch, Helm charts) on Kubernetes
+        via Crossplane.
+      - Integrated AWS services including EKS for clusters, RDS for managed
+        databases, and ALB for ingress and routing.
+      - Automated end-to-end deployments and lifecycle management of platform
+        components with declarative manifests and Helm.
+      - Demonstrated the platform to stakeholders, conducted onboarding
+        sessions, and provided guidance to teams for adopting the platform
+        and best practices.
+      - Produced reusable code, templates, and documentation to enable
+        repeatable deployments across environments.
+    skills:
+      - Platform Engineering
+      - DevOps
+      - KCL (language)
+      - Kubernetes
+      - Camunda
+      - Helm
+      - Crossplane
+      - Elasticsearch
+      - Zeebe
+      - AWS
+      - Kyverno Chainsaw
+      - Python
+      - Amazon Elastic Kubernetes Service (EKS)
+      - Amazon Relational Database Service (RDS)
+      - Amazon S3
+
+  - company: "True"
+    title: Kubernetes Engineer
+    location: Amsterdam, The Netherlands
+    date: Jan 2023 — Dec 2024
+    description: >
+      Responsible for designing, managing, and expanding Kubernetes
+      environments, both on True’s private cloud (Highlander) and public
+      clouds like Azure. My tasks included automating and improving
+      Kubernetes products, as well as supporting customers in implementing
+      and maximizing the use of Kubernetes clusters and associated services.
+    highlights:
+      - Automated True’s Kubernetes product with pipelines (Ansible/Terraform),
+        Rancher/RKE, and Kubernetes manifests/Helm charts.
+      - Developed a REST API for reading configuration files (manifests,
+        custom yaml).
+      - Guided customers in application deployments and implementation of best
+        practices using tools like ArgoCD (GitOps) and
+        HashiCorp Vault (secrets).
+      - Led the migration from RKE1 to Talos, including design, task
+        distribution, and automation.
+      - Delivered training sessions for engineers and conceptual Kubernetes
+        sessions for non-technical colleagues.
+      - Designed and developed a tool to automatically allocate Datadog costs
+        across customers and environments based on
+        tags and labels.  # side project
+      - Developed and presented a workshop at a technical conference on building
+        a Kubernetes operator.  # side project
+    skills:
+      - Kubernetes
+      - Azure Kubernetes Service (AKS)
+      - Rancher Kubernetes Management
+      - RKE 1 + 2
+      - Talos
+      - GitLab CI
+      - Nginx
+      - Cert Manager
+      - Grafana
+      - Python
+      - Bash
+      - Terraform
+      - Ansible
+      - Helm
+      - ArgoCD
+      - Keycloak
+      - Hashicorp Vault
+      - Trident
+      - Kuberhealthy
+      - Cookiecutter
+      - Nextcloud
+      - Harbor
+
+  - company: "True"
+    title: Public Cloud Engineer
+    location: Amsterdam, The Netherlands
+    date: Dec 2020 — Jan 2023
+    description: >
+      Designed and implemented custom platforms in Azure Cloud for various
+      clients, including web hosting, IaaS, and Kubernetes solutions. I used
+      Infrastructure as Code (Terraform) to build infrastructures and
+      standardized Terraform modules to ensure consistency, efficiency, and
+      best practices across different client projects.
+    highlights:
+      - Designed and implemented Terraform modules for automated resource
+        provisioning in Azure Cloud.
+      - Developed a Python tool with GitLab CI to detect configuration drift
+        in Terraform.
+      - Implemented environments ranging from small-scale App Services to
+        multi-region architectures with Frontdoor.
+      - Implemented Datadog and set up dashboards for all Azure environments.
+      - Delivered workshops and training to (non-cloud) engineers to help them
+        understand the basics of Azure and enable self-implementation.
+      - Collected and presented information to achieve Microsoft’s Advanced
+        Specialization.
+      - Designed and integrated an internal automation project using Camunda to
+        combine and visualize processes (BPMN) and pipelines from various
+        technical teams.  # side project
+      - Designed and implemented a structure to offer CI/CD pipelines as a
+        product by breaking down the various steps and techniques into building
+        blocks, enabling the offering of best practices
+        to customers.  # side project
+    skills:
+      - Azure
+      - Azure Kubernetes Service (AKS)
+      - Azure App Service
+      - Azure Frontdoor
+      - Azure CSP
+      - Terraform
+      - Python
+      - Bash
+      - GitLab CI
+      - Docker
+      - Camunda
+      - REST API
+
+  - company: "True"
+    title: Infrastructure Engineer
+    location: Amsterdam, The Netherlands
+    date: Mar 2019 — Dec 2020
+    description: >
+      Contributed to the development and management of True’s (Highlander)
+      private cloud and other shared platforms used by client teams for their
+      end customers. My focus was on ensuring the stability and
+      user-friendliness of these platforms. Additionally, I held the role of
+      "Ansible Master," where I was responsible for reviewing and improving
+      changes to Ansible roles and related automation processes.
+    highlights:
+      - Developed an internal automation platform with Ansible and AWX, allowing
+        clients to generate values for Ansible playbooks through a graphical
+        interface, supported by automated tests and deployments via GitLab CI.
+      - Maintenance and automation of the internal Ceph storage platform
+        using Ansible.
+      - Management of the internal GitLab platform, including central instances
+        and multi-location runners.
+      - Management and automation of NetApp clusters.
+      - Designed development workflows with clients and built CI/CD pipelines
+        to automate these processes.  # side project
+      - Conceptualized and automated a PAAS proposition for Redis caching.
+        Build with Sentinel and KeyDB.  # side project
+    skills:
+      - KVM
+      - Python
+      - Bash
+      - Ansible
+      - Ubuntu
+      - Ceph
+      - Nagios
+      - GitLab
+      - GitLab CI
+      - Docker
+      - Vagrant
+      - NetApp
+      - Jenkins
+      - Graylog
+      - Redis
+      - KeyDB
+      - Prometheus
+
+  - company: DearNova
+    title: DevOps Engineer
+    location: Vianen, The Netherlands
+    date: Sep 2018 — Dec 2018
+    description: >
+      Developing (Python) internal tools for auditing purposes and creating
+      a cloud inventory. Building and managing internal infrastructure for
+      the developers (pipelines, global log setup).
+    skills:
+      - Python
+      - Azure
+      - GitLab CI
+      - Graylog
+      - TeamCity
+
+  - company: Sentia
+    title: Senior Continuity Engineer
+    location: Nieuwegein, The Netherlands
+    date: Dec 2017 - Sep 2018
+    description: >
+      Designing and building high available infrastructures on the Sentia
+      private cloud and public clouds. Handle customer requests, both new
+      features and incidents. Performing standby duty. Lead engineer for a
+      select amount of customers. Contributed company wide by running various
+      workshops for different teams in the company and working towards company
+      wide automation via Ansible.
+    skills:
+      - Linux
+      - Ansible
+      - GitLab CI
+      - Training
+      - Apache
+      - Nginx
+      - MySQL
+      - Galera
+      - HAProxy
+      - Project Management
+      - Redis
+      - KeyDB
+
+  - company: Sentia
+    title: Continuity Engineer
+    location: Nieuwegein, The Netherlands
+    date: Nov 2013 - Dec 2017
+    description: >
+      Designing and building high available infrastructures on the Sentia
+      private cloud and public clouds. Handle customer requests, both new
+      features and incidents. Performing standby duty. Lead engineer for a
+      select amount of customers. Contributed company wide by running
+      various workshops for different teams in the company and working towards
+      company wide automation via Ansible.
+    skills:
+      - Linux
+      - Ansible
+      - GitLab CI
+      - Training
+      - Apache
+      - Nginx
+      - MySQL
+      - Galera
+      - HAProxy
+      - Project Management
+      - Redis
+      - KeyDB
+
+  - company: A-side Media
+    title: Service Employee
+    location: Mijdrecht, The Netherlands
+    date: Feb 2012 - Nov 2013
+    description: >
+      Managing the webhosting platform and giving support to the developers
+      working at the company. This included managing the (linux based)
+      servers, migrating websites and creating new environments for new
+      websites and applications.
+    skills:
+      - Linux
+      - Webhosting
+      - DirectAdmin
+      - Apache
+      - MySQL
+      - PHP
+
+# ── Projects ───────────────────────────────────────────────
+projects:
+  - name: SteamCMD API
+    url: https://www.steamcmd.net
+    logo: /img/logo-steamcmd.png
+    description: >
+      A free REST API that retrieves app data from Steam, stores it
+      and returns it in a structured way. Build with Python and hosted
+      on Kubernetes. The average amount of unique requests is over 5
+      million a day.
+    tags:
+      - Python
+      - Redis
+      - Kubernetes
+      - FastAPI
+      - Celery
+
+  - name: SteamCMD Images
+    url: https://hub.docker.com/r/steamcmd/steamcmd
+    logo: /img/logo-steamcmd-white.png
+    description: >
+      An automated daily tested build of container images containing
+      SteamCMD for multiple distributions. Over 5 million downloads on
+      Docker Hub.
+    tags:
+      - GitHub Actions
+      - Docker
+      - Images
+
+  - name: Lanlords
+    url: https://github.com/lanlords
+    logo: /img/logo-lanlords.png
+    description: >
+      Infrastructure that supports a Dutch LAN gaming competition.
+      Runs gameservers with server configuration generated based on the
+      teams and mode that is played according the competition schedule.
+    tags:
+      - Docker
+      - Containers
+      - REST API
+      - Networking
+      - Ansible
+      - Gameservers
+
+  - name: Homelab
+    url: https://github.com/jonakoudijs/homelab
+    logo: /img/logo-jona.png
+    description: >
+      Tools and automation for my personal Homelab. The techniques
+      and usage often changes based on new things I want to learn and
+      try out.
+    tags:
+      - Kubernetes
+      - Talos
+      - Helm
+      - Helmfile
+      - Traefik
+      - Cert Manager
+      - Step CA
+      - Longhorn
+
+# ── Education ──────────────────────────────────────────────
+education:
+  - school: Cloud Native Computing Foundation (CNCF)
+    degree: Kubernetes and Cloud Native Security Associate (KCSA)
+    date: 2025
+    note: Certificate ID // LF-7AY9VYMIJC
+
+  - school: Cloud Native Computing Foundation (CNCF)
+    degree: Certified Kubernetes Application Developer (CKAD)
+    date: 2025
+    note: Certificate ID // LF-4HJFXNPWRF
+
+  - school: Cloud Native Computing Foundation (CNCF)
+    degree: Kubernetes and Cloud Native Associate (KCNA)
+    date: 2025
+    note: Certificate ID // LF-3P7B64OLC6
+
+  - school: Cloud Native Computing Foundation (CNCF)
+    degree: Certified Kubernetes Administrator (CKA)
+    date: 2024
+    note: Certificate ID // LF-K67WL3QEY9
+
+  - school: ICT Academie Utrecht
+    degree: MBO Niveau 4 versneld - Systeembeheer
+    date: 2009 - 2012
+
+  - school: Veenlanden College
+    degree: VMBO-T
+    date: 2005 - 2008

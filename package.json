@@ -1,0 +1,16 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Jona Koudijs — CV / Resume",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve",
+    "lint:html": "html-validate _site/index.html",
+    "lint:yaml": "yamllint src/_data/resume.yaml",
+    "validate": "vnu --errors-only _site/index.html"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "html-validate": "^11.5.6"
+  }
+}
