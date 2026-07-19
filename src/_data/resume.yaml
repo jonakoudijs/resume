@@ -320,7 +320,7 @@ projects:
 
   - name: SteamCMD Images
     url: https://hub.docker.com/r/steamcmd/steamcmd
-    logo: /img/logo-steamcmd-white.png
+    logo: /img/logo-steamcmd.png
     description: >
       An automated daily tested build of container images containing
       SteamCMD for multiple distributions. Over 5 million downloads on
