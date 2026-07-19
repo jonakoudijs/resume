@@ -307,10 +307,10 @@ projects:
     url: https://www.steamcmd.net
     logo: /img/logo-steamcmd.png
     description: >
-      A free REST API and open source project used to easily expose
-      Steam game/tool information via a REST API. Over 5 million
-      requests per day. I build the API, Kubernetes platform it runs
-      on and the supporting tools like the docs.
+      A free API and open source project used to easily expose
+      Steam game/tool information via REST. Over 5 million
+      requests per day. I build the API, Kubernetes platform it
+      runs on and the supporting tools like the docs.
     tags:
       - Python
       - Redis
