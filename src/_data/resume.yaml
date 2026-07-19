@@ -28,11 +28,11 @@ about: |
 experience:
 
   - company: Politie Nederland
-    title: Platform Engineer
+    title: Platform Engineer (contract)
     location: Nieuwegein, The Netherlands
     date: Apr 2026 — Present
     description: >
-      (contract) Working on the internal MAAS (Metal-As-A-Service) product.
+      Working on the internal MAAS (Metal-As-A-Service) product.
       This automates the roll-out of new hard machines and gives teams the
       tools to manage the lifecycle themselves.
     skills:
@@ -43,11 +43,11 @@ experience:
       - Ansible
 
   - company: Nationale-Nederlanden
-    title: Platform Engineer
+    title: Platform Engineer (contract)
     location: Rotterdam, The Netherlands
     date: Feb 2025 — Mar 2026
     description: >
-      (contract) Responsible for automating deployment and management
+      Responsible for automating deployment and management
       of a full Camunda platform on Kubernetes using Crossplane and KCL,
       and supporting stakeholders in onboarding and demonstrations. Focused
       on infrastructure-as-code, cloud integrations, and delivering a
