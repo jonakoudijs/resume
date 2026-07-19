@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@master
+      - name: Install NPM prerequisites
+        run: npm install
       - name: Generate static build files
         run: npm run build
       - name: Sync with Bunny object store
