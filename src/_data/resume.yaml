@@ -33,8 +33,8 @@ experience:
     date: Apr 2026 — Present
     description: >
       Working on the internal MAAS (Metal-As-A-Service) product.
-      This automates the roll-out of new hard machines and gives teams the
-      tools to manage the lifecycle themselves.
+      This automates the roll-out of new hardware machines and gives
+      teams the tools to manage the lifecycle themselves.
     skills:
       - Hardware
       - Kubernetes
@@ -307,16 +307,18 @@ projects:
     url: https://www.steamcmd.net
     logo: /img/logo-steamcmd.png
     description: >
-      A free REST API that retrieves app data from Steam, stores it
-      and returns it in a structured way. Build with Python and hosted
-      on Kubernetes. The average amount of unique requests is over 5
-      million a day.
+      A free REST API and open source project used to easily expose
+      Steam game/tool information via a REST API. Over 5 million
+      requests per day. I build the API, Kubernetes platform it runs
+      on and the supporting tools like the docs.
     tags:
       - Python
       - Redis
       - Kubernetes
       - FastAPI
+      - Steam
       - Celery
+      - RabbitMQ
 
   - name: SteamCMD Images
     url: https://hub.docker.com/r/steamcmd/steamcmd
