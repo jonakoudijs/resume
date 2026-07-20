@@ -6,8 +6,19 @@ on:
       - main
 
 jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run HTML lint test
+        run: npm run lint:html
+      - name: Run YAML lint test
+        run: npm run lint:yaml
+      - name: Run Nu Html Checker
+        run: npm run validate
+
   deploy:
     runs-on: ubuntu-latest
+    needs: [tests]
     steps:
       - name: Checkout repository
         uses: actions/checkout@master
