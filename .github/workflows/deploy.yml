@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
+      - name: Install VNU via Homebrew
+        run: brew install vnu
       - name: Install NPM prerequisites
         run: npm install
       - name: Generate static build files
