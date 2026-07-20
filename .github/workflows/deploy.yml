@@ -38,7 +38,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
-
+      - name: Install NPM prerequisites
+        run: npm install
+      - name: Generate static build files
+        run: npm run build
       - name: Run Nu Html Checker
         run: npm run validate
 
