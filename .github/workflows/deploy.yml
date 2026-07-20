@@ -9,6 +9,8 @@ jobs:
   tests:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
       - name: Run HTML lint test
         run: npm run lint:html
       - name: Run YAML lint test
@@ -21,7 +23,7 @@ jobs:
     needs: [tests]
     steps:
       - name: Checkout repository
-        uses: actions/checkout@master
+        uses: actions/checkout@v7
       - name: Install NPM prerequisites
         run: npm install
       - name: Generate static build files
