@@ -6,29 +6,49 @@ on:
       - main
 
 jobs:
-  tests:
-    name: Tests
+  html-lint:
+    name: HTML lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
-      - name: Install VNU via Homebrew
-        run: brew install vnu
       - name: Install NPM prerequisites
         run: npm install
       - name: Generate static build files
         run: npm run build
       - name: Run HTML lint test
         run: npm run lint:html
+
+  yaml-lint:
+    name: HTML lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+      - name: Install NPM prerequisites
+        run: npm install
+      - name: Generate static build files
+        run: npm run build
       - name: Run YAML lint test
         run: npm run lint:yaml
+
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
       - name: Run Nu Html Checker
         run: npm run validate
 
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
-    needs: [tests]
+    needs:
+      - html-lint
+      - yaml-lint
+      - validate
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
