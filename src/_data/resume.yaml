@@ -6,6 +6,10 @@ email: hello@jona.io
 location: Utrecht, The Netherlands
 year: 2026
 website: https://www.jona.io
+description: |
+  Platform Engineer with 14+ years of experience in Kubernetes,
+  cloud infrastructure, Infrastructure as Code, automation, and
+  DevOps. Based in Utrecht, The Netherlands.
 
 # ── Social Links ───────────────────────────────────────────
 links:
