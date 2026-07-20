@@ -92,6 +92,9 @@ header .title-role {
 .header-links svg {
     flex-shrink: 0;
 }
+#location-icon {
+    vertical-align: middle;
+}
 
 /* ── About ────────────────────────────────────────── */
 #about {

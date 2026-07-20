@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ resume.name }} — CV / Resume</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/main.css"">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 
@@ -19,7 +19,7 @@
             <h1>{{ resume.name }}</h1>
             <p class="title-role">{{ resume.role }}</p>
             <div class="header-links">
-                {% for link in resume.links %}
+                {%- for link in resume.links -%}
                 {% if link.label == "LinkedIn" %}
                 <a href="{{ link.url }}" target="_blank" rel="noopener">
                     <!-- LinkedIn icon -->
@@ -30,7 +30,7 @@
                     </svg>
                     {{ link.label }}
                 </a>
-                {% elif link.label == "GitHub" %}
+                {%- elif link.label == "GitHub" -%}
                 <a href="{{ link.url }}" target="_blank" rel="noopener">
                     <!-- GitHub icon -->
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -39,7 +39,7 @@
                     </svg>
                     {{ link.label }}
                 </a>
-                {% elif link.label == "Email" %}
+                {%- elif link.label == "Email" -%}
                 <a href="{{ link.url }}">
                     <!-- Mail icon -->
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -49,10 +49,10 @@
                     {{ resume.email }}
                 </a>
                 {% endif %}
-                {% endfor %}
+                {%- endfor -%}
                 <span>
                     <!-- Location icon -->
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:4px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" id="location-icon">
                         <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
                         <circle cx="12" cy="10" r="3" />
                     </svg>
@@ -81,7 +81,7 @@
             <div class="container">
                 <p class="section-label">Experience</p>
 
-                {% for item in resume.experience %}
+                {% for item in resume.experience -%}
                 <div class="experience-item">
                     <div class="exp-header">
                         <span class="exp-company">{{ item.company }}</span>
@@ -90,25 +90,24 @@
                     <div class="exp-title">{{ item.title }}</div>
                     <div class="exp-location">{{ item.location }}</div>
                     <div class="exp-description">
-                        {{ item.description }}
-                        {% if item.highlights %}
+                        {{ item.description -}}
+                        {%- if item.highlights %}
                         <ul>
-                            {% for highlight in item.highlights %}
+                            {%- for highlight in item.highlights %}
                             <li>{{ highlight }}</li>
-                            {% endfor %}
+                            {%- endfor %}
                         </ul>
-                        {% endif %}
-                        {% if item.skills %}
+                        {%- endif %}
+                        {%- if item.skills %}
                         <div class="skill-tags">
-                            {% for skill in item.skills %}
+                            {%- for skill in item.skills %}
                             <span class="skill-tag">{{ skill }}</span>
-                            {% endfor %}
+                            {%- endfor %}
                         </div>
-                        {% endif %}
+                        {%- endif %}
                     </div>
                 </div>
-                {% endfor %}
-
+                {% endfor -%}
             </div>
         </section>
 
@@ -120,33 +119,32 @@
                 <p class="section-label">Projects</p>
                 <div class="projects-grid">
 
-                    {% for project in resume.projects %}
+                    {%- for project in resume.projects -%}
                     {% if project.url %}
                     <a class="project-card" href="{{ project.url }}">
-                    {% else %}
+                    {%- else %}
                     <div class="project-card">
                     {% endif %}
                         <div class="project-logo">
-                            {% if project.logo is defined %}
-                                <img src="{{ project.logo }}" alt="{{ project.name }} Logo" />
-                            {% else %}
+                            {% if project.logo is defined -%}
+                                <img src="{{ project.logo }}" alt="{{ project.name }} Logo">
+                            {%- else -%}
                                 ⌘
-                            {% endif %}
+                            {%- endif %}
                         </div>
                         <div class="project-name">{{ project.name }}</div>
                         <div class="project-description">{{ project.description }}</div>
                         <div class="project-tags">
-                            {% for tag in project.tags %}
+                            {%- for tag in project.tags %}
                             <span class="project-tag">{{ tag }}</span>
-                            {% endfor %}
+                            {%- endfor %}
                         </div>
-                    {% if project.url %}
+                    {% if project.url -%}
                     </a>
-                    {% else %}
+                    {%- else %}
                     </div>
                     {% endif %}
-                    {% endfor %}
-
+                    {%- endfor %}
                 </div>
             </div>
         </section>
@@ -158,18 +156,18 @@
             <div class="container">
                 <p class="section-label">Education</p>
 
-                {% for item in resume.education %}
+                {%- for item in resume.education %}
                 <div class="education-item">
                     <div class="edu-left">
                         <div class="edu-school">{{ item.school }}</div>
                         <div class="edu-degree">{{ item.degree }}</div>
-                        {% if item.note %}
+                        {%- if item.note %}
                         <div class="edu-note">{{ item.note }}</div>
-                        {% endif %}
+                        {%- endif %}
                     </div>
                     <div class="edu-date">{{ item.date }}</div>
                 </div>
-                {% endfor %}
+                {%- endfor %}
 
             </div>
         </section>
