@@ -25,8 +25,8 @@ npm run serve
 
 ## Testing
 
-To test the HTML validatity the following tools are used. Make sure
-they are available on you local machine before running the tests:
+To test the HTML output the following tools are used. These can be easily
+installed by running `npm install` in the root directory:
 
 - [validator](https://github.com/validator/validator)
 - [html-validate](https://html-validate.org/usage/)
