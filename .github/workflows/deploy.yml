@@ -20,7 +20,7 @@ jobs:
         run: npm run lint:html
 
   yaml-lint:
-    name: HTML lint
+    name: YAML lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
