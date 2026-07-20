@@ -1,3 +1,6 @@
+[![Deploy Status](https://github.com/jonakoudijs/resume/actions/workflows/deploy.yml/badge.svg)](https://github.com/jonakoudijs/resume/actions/workflows/deploy.yml)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 # Jona Resume
 
 Self-hosted CV / resume deployed to 
