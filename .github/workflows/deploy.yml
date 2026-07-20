@@ -12,8 +12,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
-      - name: Install prerequisites
-        run: npm install --save-dev html-validate
+      - name: Install NPM prerequisites
+        run: npm install
+      - name: Generate static build files
+        run: npm run build
       - name: Run HTML lint test
         run: npm run lint:html
       - name: Run YAML lint test
