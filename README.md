@@ -25,12 +25,24 @@ npm run serve
 
 ## Testing
 
-To test the HTML output the following tools are used. These can be easily
-installed by running `npm install` in the root directory:
+To test the HTML output the following tools are used:
 
 - [validator](https://github.com/validator/validator)
 - [html-validate](https://html-validate.org/usage/)
 - [yamllint](https://yamllint.readthedocs.io/en/stable/quickstart.html)
+
+These are installed by running `npm install` in the root:
+
+```sh
+$ npm install
+
+added 142 packages, and audited 143 packages in 3s
+
+40 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+```
 
 Run the tests with the following `npm run` commands:
 

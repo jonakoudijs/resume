@@ -13,5 +13,9 @@
     "@11ty/eleventy": "^3.0.0",
     "html-validate": "^11.5.6",
     "vnu-jar": "^26.7.16"
+  },
+  "allowScripts": {
+    "fsevents@2.3.3": true,
+    "vnu-jar@26.7.16": true
   }
 }
