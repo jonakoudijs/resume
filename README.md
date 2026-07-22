@@ -3,7 +3,7 @@
 
 # Jona Resume
 
-Self-hosted CV / resume deployed to 
+My public CV / resume deployed to 
 [resume.jona.io](https://resume.jona.io).
 
 ## Development
